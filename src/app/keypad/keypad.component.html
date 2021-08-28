@@ -1,0 +1,21 @@
+<div class="main-wrapper">
+    <div class="page-container">
+        <div class="comp-header">
+            <h3>Keypad</h3>
+        </div>
+        <div class="comp-body row">
+            <div class="keypad-container col">
+                <div class="row-{{i}} keypad-Container-row row" *ngFor="let keypadRow of keypad; let i = index">
+                    <div class="keypad-{{keyIndex}} keypad col" *ngFor="let key of keypadRow; let keyIndex = index" (click)="buttonClicked(i,keyIndex)">
+                        <span class="characters" innerHTML='{{key.alphabetKey}}'></span>
+                        <span class="numbers" innerHTML='{{key.numericKey}}'></span>
+                    </div>
+                </div>
+            </div>
+            <div class="history-container col">
+                <h4>History</h4>
+                <div class="message" *ngFor="let item of sessionHistory" innerHTML='{{item}}'></div>
+            </div>
+        </div>
+    </div>
+</div>

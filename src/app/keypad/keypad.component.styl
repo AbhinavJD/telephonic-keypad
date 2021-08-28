@@ -1,0 +1,40 @@
+.main-wrapper
+    .page-container
+        .comp-header
+            text-align center
+            padding 1.5em
+        .comp-body
+            .keypad-container
+                .keypad-Container-row
+                    justify-content center
+                    .keypad
+                        display flex
+                        flex-direction column
+                        align-items center
+                        flex-grow 0.1
+                        border 2px solid grey
+                        border-radius 25px
+                        margin 3px
+                        max-width 8%
+                        background: grey;
+                        color: white;
+                        cursor pointer
+                        .characters
+                            font-size 11px
+                        .numbers
+                            font-size 20px
+                    .keypad:hover
+                        background: black;
+                        color: white;
+            .history-container
+                height 60vh
+                overflow auto
+                margin-left 0.5em
+                border-left 1px dashed black
+                h4
+                    text-align center
+                .message
+                    width 80%
+                    margin 5px
+                    padding 4px
+                    border 1px solid grey
